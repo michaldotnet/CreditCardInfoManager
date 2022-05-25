@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstName"
+            android:layout_width="279dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:hint="Imię">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastName"
+            android:layout_width="279dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nazwisko"></com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardNumber"
+            android:layout_width="279dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="30dp"
+            android:hint="Numer karty"></com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/expiryDate"
+            android:layout_width="279dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:hint="Data ważności karty"></com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/CVENumber"
+            android:layout_width="279dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:hint="Numer CVE"></com.google.android.material.textfield.TextInputEditText>
+
+        <Button
+            android:id="@+id/addCardToDb"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:onClick="addCreditCard"
+            android:text="Dodaj kartę">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/AddCardError"
+        android:layout_width="326dp"
+        android:layout_height="62dp"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
